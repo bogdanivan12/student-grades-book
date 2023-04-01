@@ -1,0 +1,10 @@
+
+p
+java:S3008"SRename this field "INSTANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Γΰµ8Δ•ωσ0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ά­¦ϊÿÿÿÿ8Θ•ωσ0
+]
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(χΥ…―8Κ•ωσ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(χΥ…―8Κ•ωσ0
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Εy8Λ•ωσ0
+T
+java:S1068"2Remove this unused "materieService" private field.(•ΟΞΜώÿÿÿÿ8Λ•ωσ0
