@@ -47,6 +47,7 @@ public class SemestruServiceImpl implements SemestruService {
     @Override
     public void addElement(Semestru semestru) {
         semestruList.add(semestru);
+        semestruList.sort((a, b) -> a.getAn() * 10 + a.getSemestru() - b.getAn() * 10 - b.getSemestru());
     }
 
     @Override

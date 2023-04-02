@@ -8,7 +8,6 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
 @ToString
@@ -22,4 +21,14 @@ public class NotaCompusa extends AbstractEntity {
     private Materie materie;
 
     private NotaCompusa notaParinte;
+
+    private double pondere = 1d;
+
+    public double getValoare() {
+        double valoare = 0d;
+        for (NotaCompusa nota: note) {
+            valoare += nota.getValoare() * nota.pondere;
+        }
+        return valoare;
+    }
 }

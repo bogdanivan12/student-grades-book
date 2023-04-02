@@ -1,3 +1,5 @@
 
 X
-java:S2696,"6Make the enclosing method "static" or remove this set.(ÃèÈûÿÿÿÿ8º‹ùó0
+java:S2696-"6Make the enclosing method "static" or remove this set.(ÃèÈûÿÿÿÿ8„¤ûó0
+t
+java:S62048"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Öí¥Ãûÿÿÿÿ8†¤ûó0

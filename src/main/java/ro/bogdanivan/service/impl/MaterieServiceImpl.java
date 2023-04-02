@@ -1,6 +1,7 @@
 package ro.bogdanivan.service.impl;
 
 import ro.bogdanivan.model.Materie;
+import ro.bogdanivan.model.Profesor;
 import ro.bogdanivan.model.Semestru;
 import ro.bogdanivan.service.MaterieService;
 
@@ -48,5 +49,10 @@ public class MaterieServiceImpl implements MaterieService {
     public void modificaElementById(UUID id, Materie materie) {
         removeElementById(id);
         addElement(materie);
+    }
+
+    @Override
+    public List<Materie> getMaterieByProfesor(Profesor profesor) {
+        return materieList.stream().filter(materie -> materie.getProfesori().values().contains(profesor)).collect(Collectors.toList());
     }
 }

@@ -1,6 +1,7 @@
 package ro.bogdanivan.service;
 
 import ro.bogdanivan.model.Materie;
+import ro.bogdanivan.model.Profesor;
 import ro.bogdanivan.model.Semestru;
 
 import java.util.List;
@@ -22,4 +23,6 @@ public interface MaterieService {
     void removeElementById(UUID id);
 
     void modificaElementById(UUID id, Materie materie);
+
+    List<Materie> getMaterieByProfesor(Profesor profesor);
 }

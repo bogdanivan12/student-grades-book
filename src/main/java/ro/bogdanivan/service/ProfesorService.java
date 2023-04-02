@@ -1,7 +1,9 @@
 package ro.bogdanivan.service;
 
+import ro.bogdanivan.model.Materie;
 import ro.bogdanivan.model.Profesor;
 import ro.bogdanivan.model.enums.GradDidactic;
+import ro.bogdanivan.model.enums.TipCurs;
 
 import java.util.List;
 import java.util.Optional;
@@ -22,4 +24,8 @@ public interface ProfesorService {
     void modificaElementById(UUID id, Profesor profesor);
 
     void addElement(Profesor profesor);
+
+    List<Profesor> getElementByMaterie(Materie materie);
+
+    List<Profesor> getElementByTipCurs(TipCurs tipCurs);
 }

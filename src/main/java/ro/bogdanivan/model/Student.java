@@ -14,8 +14,6 @@ public class Student extends Persoana {
 
     private String nrMatricol;
 
-    private List<Semestru> semestre;
-
     private static Student INSTANCE;
 
     public static Student getInstance() {

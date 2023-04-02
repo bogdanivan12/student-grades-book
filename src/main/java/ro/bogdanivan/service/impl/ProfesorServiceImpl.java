@@ -1,7 +1,9 @@
 package ro.bogdanivan.service.impl;
 
+import ro.bogdanivan.model.Materie;
 import ro.bogdanivan.model.Profesor;
 import ro.bogdanivan.model.enums.GradDidactic;
+import ro.bogdanivan.model.enums.TipCurs;
 import ro.bogdanivan.service.ProfesorService;
 
 import java.util.ArrayList;
@@ -42,6 +44,16 @@ public class ProfesorServiceImpl implements ProfesorService {
     @Override
     public void addElement(Profesor profesor) {
         profesorList.add(profesor);
+    }
+
+    @Override
+    public List<Profesor> getElementByMaterie(Materie materie) {
+        return profesorList.stream().filter(profesor -> profesor.getMaterii().keySet().contains(materie)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Profesor> getElementByTipCurs(TipCurs tipCurs) {
+        return profesorList.stream().filter((profesor -> profesor.getMaterii().values().contains(tipCurs))).collect(Collectors.toList());
     }
 
     @Override
