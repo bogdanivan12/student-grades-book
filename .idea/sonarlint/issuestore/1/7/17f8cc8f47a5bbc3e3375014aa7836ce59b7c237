@@ -1,0 +1,7 @@
+
+X
+java:S2696)"6Make the enclosing method "static" or remove this set.(ÓëÆùÿÿÿÿ8üò¯ûó0
+t
+java:S62043"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(‚ƒÕşÿÿÿÿ8ÿò¯ûó0
+o
+java:S62048"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¢¸Ï”8ó¯ûó0
